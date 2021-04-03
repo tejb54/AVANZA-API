@@ -1,3 +1,4 @@
 *.png
 __pycache__
 security_token.txt
+security_tokens.json
