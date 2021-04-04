@@ -95,7 +95,7 @@ class Avanza:
     self._print_debug('---- _save_security_token_to_file() ----')
     self._print_debug('Saving security token to file...')
     file = open(self._file_name,'w')
-    file.write(json.dumps({'X-SecurityToken': self._x_security_token, 'AuthenticationSession': self._authentication_session}))
+    file.write(json.dumps({'X-SecurityToken': self._x_security_token, 'AuthenticationSession': self._authentication_session}, indent=2))
     file.close()
 
   def _load_security_token_from_file(self):
